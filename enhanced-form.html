@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Enhanced Form</title>
+    <style>
+        body {
+            background-color: rgb(244, 246, 247);
+        }
+
+        section{
+            width:auto;
+            margin: auto;
+        }
+
+        div.mycontainer {
+        width:100%;
+        overflow:auto;
+        }
+        div.mycontainer div {
+        width:33%;  
+        float:left;
+        }
+
+        div.header{
+            width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            margin:auto;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h2>Week 2: Advanced HTML5 Enhancements</h2></div>
+    <section>
+    <div class="mycontainer">    
+        <h2>Enhanced Content</h2>
+            <h3>Ordered List</h3>
+            <div>
+                <ol>
+                    <li>Introduction to HTML5</li>
+                    <li>Working with Forms</li>
+                    <li>Enhancing Content with Media</li>
+                </ol>
+            </div>
+            <h3>Unordered List</h3>
+            <div>
+                <ul>
+                    <li>Accessibility</li>
+                    <li>Validation</li>
+                    <li>Usability</li>
+                </ul>
+            </div>
+    </div>
+        <div class="header"><h3>Table Example</h3></div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Validation</td>
+                    <td>Ensures correct data input</td>
+                </tr>
+                <tr>
+                    <td>Accessibility</td>
+                    <td>Improves user experience</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div></container>
+            <h3>Media Content</h3>
+            <img src="../assets/van.jpeg" alt="Sample Image" width="300">
+            <video controls width="300">
+                <source src="../assets/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        <div/>
+    </section>
+
+    <section>
+        <h2>Enhanced Form</h2>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,15}" title="5-15 alphanumeric characters"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" title="At least 8 characters"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color"><br><br>
+
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website"><br><br>
+
+                <label for="quantity">Quantity (1-10):</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+                <label for="range">Select a range (0-100):</label>
+                <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="hobbies">Hobbies:</label>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
