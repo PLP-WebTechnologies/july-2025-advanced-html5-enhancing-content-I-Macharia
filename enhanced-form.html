@@ -119,54 +119,56 @@
     </section>
 
     <section>
-        <h2>Enhanced Form</h2>
+        <h2 style="width: 300px; margin: auto">Enhanced Form</h2><br>
         <form action="/submit" method="post">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,15}" title="5-15 alphanumeric characters"><br><br>
+            <div style="width: 300px; margin: auto">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,15}" placeholder="5-15 alphanumeric characters"><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required minlength="8" title="At least 8 characters"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters"><br><br>
 
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required><br><br>
-            </fieldset>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
 
-            <fieldset>
-                <legend>Preferences</legend>
-                <label for="color">Favorite Color:</label>
-                <input type="color" id="color" name="color"><br><br>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color"><br><br>
 
-                <label for="website">Website:</label>
-                <input type="url" id="website" name="website"><br><br>
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website"><br><br>
 
-                <label for="quantity">Quantity (1-10):</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+                    <label for="quantity">Quantity (1-10):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
 
-                <label for="range">Select a range (0-100):</label>
-                <input type="range" id="range" name="range" min="0" max="100"><br><br>
+                    <label for="range">Select a range (0-100):</label>
+                    <input type="range" id="range" name="range" min="0" max="100"><br><br>
 
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br><br>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
 
-                <label for="hobbies">Hobbies:</label>
-                <input type="checkbox" id="reading" name="hobbies" value="reading">
-                <label for="reading">Reading</label>
-                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-                <label for="traveling">Traveling</label><br><br>
+                    <label for="hobbies">Hobbies:</label>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                    <label for="traveling">Traveling</label><br><br>
 
-                <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
-            </fieldset>
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+                </fieldset>
 
-            <input type="submit" value="Submit">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </section>
 </body>
